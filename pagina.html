@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Aura</title>
+
+    <link rel="stylesheet" href="style.css">
+</body>
+</head>
+<body>
+    <header>
+        <h1>Missão Aura</h1>
+        <p>Descubra seu perfil de explorador espacial</p>
+    </header>
+
+    <main>
+        <form id="formulario">
+            <h2>Identificação do participante</h2>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"
+                   placeholder="Digite seu nome" required>
+
+            <br><br>
+
+            <label for="nascimento">Data de nascimento:</label>
+            <input type="date" id="nascimento"
+                   name="nascimento" required>
+
+            <h2>Questionário de preferências</h2>
+
+            <p>1. Qual ambiente você prefere explorar?</p>
+            <label>
+                <input type="radio" name="ambiente"
+                       value="floresta" required>
+                Florestas exóticas 
+            </label><br>
+            <label>
+                <input type="radio" name="ambiente"
+                       value="oceano">
+                Oceanos profundos
+            </label><br>
+            <label>
+                <input type="radio" name="ambiente"
+                       value="espaco">
+                Galáxias distantes 
+            </label><br>
+            <label>
+                <input type="radio" name="ambiente"
+                       value="vulcao">
+                Vulcões colossais
+            </label>
+
+            <p>2. Qual habilidade mais combina com você?</p>
+            <label>
+                <input type="radio" name="habilidade"
+                       value="ciencia" required>
+                Adaptabilidade, cooperação e criatividade
+            </label><br>
+            <label>
+                <input type="radio" name="habilidade"
+                       value="lideranca">
+                Estratégia, liderança e raciocínio lógico
+            </label><br>
+            <label>
+                <input type="radio" name="habilidade"
+                       value="destemido">
+                Coragem, determinação e senso de justiça
+            </label>
+            <label>
+                <input type="radio" name="habilidade"
+                       value="criatividade">
+                Imaginação, inventividade e originalidade
+            </label>
+
+            <p>3. Como você age diante de um problema?</p>
+            <label>
+                <input type="radio" name="problema"
+                       value="analítico" required>
+                Analiso cuidadosamente o problema antes de tomar uma decisão
+            </label><br>
+            <label>
+                <input type="radio" name="problema"
+                       value="impulsivo">
+                Tento resolver o problema imediatamente, confiando na minha intuição
+            </label><br>
+            <label>
+                <input type="radio" name="problema"
+                       value="colaborativo">
+                Procuro conversar com outras pessoas para ouvir opiniões e encontrar soluções
+            </label>
+            <label>
+                <input type="radio" name="problema"
+                       value="colaborativo">
+                Tento inicialmente descobrir a causa do problema
+            </label>
+
+            <p>4. Qual seria sua maior motivação na missão?</p>
+            <label>
+                <input type="radio" name="motivacao"
+                       value="descoberta" required>
+                Descobrir novas formas de vida e vontade de compreender o desconhecido
+            </label><br>
+            <label>
+                <input type="radio" name="motivacao"
+                       value="conhecimento">
+                Obter conhecimentos e ajudar a desenvolver tecnologias para contribuir a humanidade
+            </label><br>
+            <label>
+                <input type="radio" name="motivacao"
+                       value="superação">
+                Testar os próprios limites físicos, mentais e emocionais
+            </label>
+            <label>
+                <input type="radio" name="motivacao"
+                       value="resenhar">
+                Resenha e diversão
+            </label>
+
+            <br><br>
+
+            <button type="submit">Descobrir meu perfil</button>
+        </form>
+
+        <section id="resultado" aria-live="polite">
+        </section>
+    </main>
+        <script src="script.js"></script>
+  </body>
+</html>
